@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>brozkeff glabels custom APT repo</title>
+  <title>brozkeff's glabels-3 custom APT repo for Debian 13</title>
 </head>
 <body>
-  <h1>APT repository: glabels custom build</h1>
-  <p>This GitHub Pages site hosts an APT repository with custom-patched <code>glabels</code>.</p>
+  <h1>APT repository: glabels-3 patched build for collate feature in glabels-3-batch</h1>
+  <p>This GitHub Pages site hosts an APT repository with custom-patched <code>glabels-3</code>. Contains patched glabels for Debian 13 to port collate feature from GUI also to glabels-3-batch</p>
 
   <h2>How to use</h2>
   <pre>
@@ -20,7 +20,8 @@ https://brozkeff.github.io/glabels-debian13/ ./" \
 sudo apt update
 sudo apt install glabels
   </pre>
-
+  <p>Instead of regular Debian version the patched version should be preferred. New parameter -a (--collate) will be present for glabels-3-batch app. Needed for automation via scripts when using csv files.</p>
+  <p>Note: This is a one-time build performed manually. No CI/CD is deployed here and no other release or patch is planned during Debian 13 lifecycle. Do not use for mission-critical deployment. Absolutely no warranty. You have been warned. ---Brozkeff</p>
   <h2>Contents</h2>
   <ul>
     <li><a href="Packages">Packages</a></li>

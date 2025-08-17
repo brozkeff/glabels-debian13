@@ -1,0 +1,444 @@
+* gLabels 3.4.1 (stable) release.  Release date 2018-04-28
+
+- Fixed crash when providing invalid file on command line (Clemens Fries)
+- Fixed crash of glabels-batch due to missing function prototype (me)
+- Added "Language" headers to po files (Piotr Drag)
+- Fixed wrapping issue with text objects when auto_shrink is enabled (me)
+- Fixed out-of-bounds read in text_nodes (Clemens Fries)
+- Fixed crash when searching select product combo boxes (Clemens Fries)
+- Fixed portability issue to signedness of char type (me)
+- New templates
+- Updated UI translations:
+    Mario Blättermann (de)
+    Marek Černocký (cs)
+    Rafael Fontenelle (pt_BR)
+    Jiri Grönroos (fi)
+    Joe Hansen (da)
+    Мирослав Николић (sr) (sr@latin)
+    Anders Jonsson (sv)
+    Dušan Kazik (sk)
+    Rūdolfs Mazurs (lv)
+    Balázs Meskó (hu)
+    Daniel Mustieles (es)
+    Claude Paroz (fr)
+    Tiago Santos (pt)
+    Kristjan SCHMIDT (eo)
+    Andika Triwidada (id)
+    Cédric Valmary (oc)
+- Updated Doc translations
+    Claude Paroz (fr)
+
+
+* gLabels 3.4.0 (stable) release.  Release date 2016-04-24
+
+- Fixed missing contacts when importing from vcard (Tim Waugh)
+- Create vcard composite address entry from components, if missing (Tim Waugh)
+- Auto-detect file encoding of CSV files (Jim Patterson)
+- Fixed sensitivity of first handle of line objects (Marek Černocký)
+- Object dragging enhancements (Marek Černocký)
+- Fixed problem with setting shadow color of line and text objects from key (Marek Černocký)
+- Use current label's path to set default "save as" directory (Marek Černocký)
+- Added properties dialog (Marek Černocký)
+- Fixed potential crash on "Select All" (Marek Černocký)
+- Fixed delayed rotate/flip (Marek Černocký)
+- Fixed clipping issue when drawing beyond label editor's drawing area (me)
+- Removed final windowing system and dbus dependencies from glabels-3-batch (me)
+- Added a GS1 input mode for Datamatrix barcodes using the zint backend (me)
+- Numerous new templates and fixes to the product database
+    (me, Mario Blättermann, GHPS, Marek Černocký, Windel Bouwman, Thomas Steinert, Malte Skoruppa)
+- Updated UI translations:
+    Åke Engelbrektson (sv)
+    Anders Jonsson (sv)
+    Balázs Meskó (hu)
+    Balázs Úr (hu)
+    Daniel Mustieles (es)
+    Daniel Șerbănescu (ro)
+    Dušan Kazik (sk)
+    Enrico Nicoletto (pt_BR)
+    Gabor Kelemen (hu)
+    Gábor Kelemen (hu)
+    Jiri Grönroos (fi)
+    Jordi Mas (ca)
+    Marek Černocký (cs)
+    Mario Blättermann (de)
+    Muhammet Kara (tr)
+    Necdet Yücel (tr)
+    Pedro Albuquerque (pt)
+    Rafael Fontenelle (pt_BR)
+    Samir Ribic (bs)
+    Tom Tryfonidis (el)
+    Walter Cheuk (zh_HK)
+    Walter Cheuk (zh_TW)
+    Мирослав Николић (sr) (sr@latin)
+- Updated Doc translations:
+    Alexandre Franke (fr)
+    Daniel Mustieles (es)
+    Dimitris Spingos (el)
+    Marek Černocký (cs)
+    Mario Blättermann (de)
+
+
+* gLabels 3.2.1 (stable) release.  Release date 2014-11-10
+
+- Fixed "new label dialog" crash introduced with Gtk 3.14
+- Fixed text box layout problems with center and right alignment
+- Updated UI translations:
+    Andika Triwidada (id)
+    Daniel Mustieles (es)
+    Dimitris Spingos (el)
+    Jiri Grönroos (fi)
+    Lasse Liehu (fi)
+    Marek Černocký (cs)
+    Mario Blättermann (de)
+    Martin Srebotnjak (sl)
+    Matej Urbančič (sl)
+    Rūdolfs Mazurs (lv)
+    Мирослав Николић (sr) (sr@latin)
+- Updated Doc translations:
+    Daniel Mustieles (es)
+    Dimitris Spingos (el)
+    Marek Černocký (cs)
+    Piotr Drąg (fr)
+
+
+* gLabels 3.2.0 (stable) release.  Release date 2013-10-28
+
+- Fixed bug causing object editor to remain active after object deleted.
+- Embed text directly to printsrteam rather than outline.
+- Added workaround for pango kerning bug: pango-cairo bug #700592.
+- Fixed many gtk+ deprecations.
+- Document updates.
+- Additional templates and fixes.
+- Updated to workaround evolution-data-server API breakage.
+- Fixed desktop file validation problems.
+- Updated and new translations.
+
+
+* gLabels 3.0.1 (stable) release.  Release date 2012-09-17
+
+- Fixed bug causing extra pages to be printed when doing a document merge
+- Fixed font scaling problems when doing a document merge
+- Added missing dependencies to libglabels and libglbarcode pkg-config files
+- Fixed invalid gsettings schema file
+- Fixed incorrect clip region for rectangular labels
+- Numerous new templates and fixes
+- Updated and new translations:
+  - Japanese (Takeshi AIHANA, Jiro Matsuzawa)
+  - German (Mario Blättermann)
+  - Spanish (Daniel Mustieles, Jorge González)
+  - Serbian (Мирослав Николић)
+  - Finnish (Jiri Grönroos)
+  - British English (Bruce Cowan)
+  - French (Claud Paroz, Bruno Brouard)
+  - Norwegian bokmål (Kjartan Maraas)
+  - Indonesian (Andika Triwidada)
+  - Greek (Efstathios Iosifidis, Konstantinos Chortis)
+  - Slovenian (Andrej Žnidaršič, Matej Urbančič, Martin Srebotnjak)
+  - Czech (Marek Černocký)
+  - Russian (Александр Прокудин, Yuri Myasoedov)
+  - Esperanto (Kristjan SCHMIDT)
+  - Arabic (Hatim Ali)
+
+
+* gLabels 3.0.0 (stable) release.  Release date 2011-05-16
+
+- Reorganization of alignment menus
+- Allow glabels-batch to be run outside of windowing system
+- CSV parser now more closely follows RFC 4180
+- Added templates
+- Updated translations:
+   - French (Claude Paroz, Bruno Brouard, Gérard Baylard)
+   - Spanish (Daniel Mustieles)
+   - Japanese (Takayuki KUSANO, Takayoshi OKANO)
+   - Czech (Marek Černocký)
+   - German (Mario Blättermann)
+   - Dutch (Mario Blättermann, Hannie Dumoleyn)
+
+
+* gLabels 2.3.1 (unstable) release.  Release date 2011-01-03
+
+- Migrated to GNOME 3 platform
+  - Ported to Gtk3
+  - Ported from gconf to gsettings
+- Updated manual and ported to Mallard
+- Added text merge backend that uses semicolon delimeters
+- Improve appearance of shadows of boxes and ellipses
+- Added shadow property of image objects
+- Added native support for SVG images
+- Added full-featured barcode backend for libzint (Sam Lown, Robin Stuart)
+- Refactoring of barcode subsystem
+  - Moved core barcode support to its own library (libglbarcode)
+  - Added onecode backend to libglbarcode
+  - Resurrected built-in Code39 backend and added to libglbarcode
+    (from way back in glabels 0.1.x)
+  - Allow selection of barcode backend from UI
+- New logo and theme friendly icons
+- Added support for elliptical templates
+- Added many new templates
+- Updated translations:
+   - Czech (Marek Černocký)
+   - Danish (Joe Hansen)
+   - French (Claude Paroz, Bruno Brouard, Gérard Baylard)
+   - German (Mario Blättermann)
+   - Spanish (Daniel Mustieles)
+   - Slovenian (Andrej Žnidaršič)
+   - Catalan (Valencian) (David Planella)
+   - Swedish (Daniel Nylander)
+   - Brazilian Portuguese (Michel Recondo, Henrique P. Machado, Antonio Fernandes C. Neto)
+
+
+* gLabels 2.3.0 (unstable) release.  Release date 2010-06-06
+
+- Removed use of deprecations in platform:
+  - Migrated from libglade to GtkBuilder
+  - Removed all dependencies on libgnome and libgnomeui
+  - Removed all GTK+ and GLIB deprecations as of GNOME 2.30
+  - Use accessor functions in GTK+ and GLIB
+- Major refactoring of code
+- Added Undo/Redo capability
+- GnuBarcode backend is now optional and is no longer distributed with glabels
+- IEC16022 (datamatrix) barcode backend is now optional and is no longer
+  distributed with glabels
+- Added optional IEC18004 (QRCode) barcode backend (Daniel Mueller)
+- Added optional Zint barcode backend (currently ony supports GS1-128, but
+  other barcodes will be supported by this backend in the future).
+  (Samual Lown)
+- Now uses "XDG Base Directory Specification" to locate user templates
+- New wizard based "New Label" dialog
+- Can now manage user created templates from within glabels
+- New "Insert Field" button
+- Allow pasting of images and text from other apps as new objects
+- Fixed focus problems which prevented proper copy and paste operation
+  within the text editor
+- CSV merge backend can now harvest 1st line of CSV file for field names
+- New font selection widget
+- New color selection widget
+- Support parallel installation with older versions of glabels
+- Updated license to GPL3+
+- Full translations of application strings for this release:
+   - German (Mario Blättermann)
+   - Spanish (Daniel Mustieles)
+   - Brazilian Portuguese (Michel Recondo)
+   - Danish (Joe Hansen)
+   - French (Claude Paroz)
+   - Slovenian (Andrej Žnidaršič)
+
+
+* gLabels 2.2.8 (stable) release.  Release date 2010-04-19
+
+- Fix crash caused by new g_new macros in glib-2.24.0
+- Removed extra padding in "New label" dialog
+- New Norwegian bokmål translation (Kjartan Maraas)
+- New Portuguese translation (Filipe Roque)
+- Updated Japanese translation (Takeshi AIHANA)
+- Updated Spanish translation (Jorge González)
+- Updated Fresh translation (Bruno Brouard)
+- Updated German translation (Mario Blättermann)
+- Updated Slovenian translation (Andrej Žnidaršič)
+- Updated Czech translation (Marek Černocký)
+- New templates
+
+
+* gLabels 2.2.7 (stable) release.  Release date 2010-03-01
+
+- Fixed limitation on encoded image sizes (fix only valid if libxml 2.7+ is installed)
+- Fixed focus behavior of canvas so that focus does not get stolen when
+  highlighting text in the object editor
+- New Slovenian translation (Andrej Žnidaršič)
+- New Danish translation (Joe Hansen)
+- Updated Czech translation (Marek Cernocky)
+- Updated German translation (Mario Blättermann)
+- Updated German help manual translation (Mario Blättermann)
+- New French translation of help manual (Alain Lojewski and Claude Paroz)
+- New Czech translation of help manual (Marek Cernocky)
+- New Spanish translation of help manual (Jorge González)
+- New templates
+
+
+* gLabels 2.2.6 (stable) release.  Release date 2009-11-11
+
+- Fixed drawing artifact with round labels.
+- Fixed several memory issues.
+- Fixed several UI inconsistencies when changing merge source.
+- Fixed potiential crash when doing a document merge.
+- Now makes a better guess at locale defaults (page size and units).
+- Updated user documentation (Mario Blättermann).
+- Updated swedish translation (Daniel Nylander).
+- Updated german translation (Mario Blättermann).
+- Updated russian translation (Alexandre Prokoudine)
+- Updated french translation (Claude Paroz)
+- New chinese translation (Careon)
+- New catalan translation (David Planella)
+- Updated german translation of user documentation (Mario Blättermann).
+- New templates.
+
+
+* gLabels 2.2.5 (stable) release.  Release date 2009-04-30
+
+- Fixed spinbutton/adjustment bugs that made glabels unusable with Gtk 2.16.
+- Fixed default preview colors in color combos.
+- Updated german translation (Mario Blättermann).
+- New templates.
+
+
+* gLabels 2.2.4 (stable) release.  Release date 2008-12-22
+
+- Corrected button order in "Open" and "Save as" dialogs.
+- Fixed performance problem when large number of fonts are installed.
+- Corrected several i18n problems.
+- Fixed "paste" bug that created phantom object views.
+- Fixed performacne problem when many objects are selected.
+- New templates.
+
+
+* gLabels 2.2.3 (stable) release.  Release date 2008-08-17
+
+- Explicitely set page size when printing -- don't let print back-end use
+  a default size (Bug #2049431).
+- Sets more appropriate object size limits for any aspect ratio (Bug #1993550).
+- Fixed crash of glabels-batch (Bug #1968653).
+- Fixed bug with barcode and image merge radio buttons (Bug #1959135).
+- Will now attempt to parse newer namespaces (Bug #1872584).
+- Fixed drawing errors when drawing markup on rotated labels.
+- New korean translation (xein@navir.com).
+- New templates.
+
+
+* gLabels 2.2.2 (stable) release.  Release date 2008-02-22
+
+- Fixed crash when creating Code128C barcode (Bug #1766425).
+- Explicitely set page size when printing "other" page size.
+- Fixed rendering bug with bitmap fonts.
+- Fixed rendering problem when displaying "Invalid barcode data".
+- Fixed crash when deleting multi-object selections.
+- Enforce minimum size for images to prevent rendering of images of zero size.
+- Fixed problem with image size spinboxes (Bug #1886438).
+- Fixed template example in documentation.
+- Use default units when writing xml files.
+- New templates.
+
+* gLabels 2.2.1 (stable) release.  Release date 2008-01-23
+
+- Sort font lists alphabetically.
+- Sort evolution records by "file_under" field.
+- Fixed clipping bug when rotating labels.
+
+
+* gLabels 2.2.0 (stable) release.  Release date 2007-12-26
+
+- Migrated from EggRecent to GtkRecentManager
+- Migrated from libgnomeprint to GtkPrintOperation and Cairo.
+- Migrated from libgnomeprint to Pango for text layout.
+- Migrated GnomeDruid to GtkAssistant for template designer.
+- Migrated from GnomeCanvas to Cairo.
+- Removed all deprecated widgets as of Gnome-2.16/Gtk-2.10.
+- Added categorization of templates and an updated New Label dialog.
+- New label dialog now allows selection of recently used templates
+- Removed splash screen.
+- Added initial support for datamatrix 2D barcodes.
+- Added support for Brazilian CEPNet barcodes.
+- Added shadow attribute to label objects.
+- New merge backend for evolution data server (Austin Henry)
+- Various bug fixes.
+- New templates.
+
+
+* gLabels 2.1.5 (unstable) release.  Release date 2007-12-09.
+
+- New label dialog now allows selection of recently used templates
+- Store brand and part number as separate fields in templates
+- Major cleanup of libglabels API and documentation
+- Minor bug fixes (and probably some new bugs).
+
+
+* gLabels 2.1.4 (unstable) release.  Release date 2007-08-17.
+
+- Added categorization of templates and an updated New Label dialog.
+- Added initial support for datamatrix 2D barcodes.
+- Migrated from EggRecent to GtkRecentManager.
+- Migrated from libgnomeprint to GtkPrintOperation and Cairo.
+- Migrated from libgnomeprint to Pango for text layout.
+- Migrated GnomeDruid to GtkAssistant for template designer.
+- Migrated from GnomeCanvas to Cairo.
+- Removed splash screen.
+- Added support for Brazilian CEPNet barcodes.
+- Updated French translation (Claude Paroz)
+- New Esperanto translation (Antonio C. Codazzi)
+- Minor bug fixes (and probably some new bugs).
+- New templates.
+
+
+* gLabels 2.1.3 (unstable) release.  Release date 2006-05-27.
+
+- Don't print "Invalid barcode data" if data field is empty. (Bug #1479839) (Darren Warner)
+- Fixed hangup when grid or markup have been toggled during a previous session. (Bug #1434324)
+- Added shadow attribute to label objects.
+- Fixed color groups in color combo widgets.
+- Fixed several potential crashes.
+
+
+* gLabels 2.1.2 (unstable) release.  Release date 2005-12-21.
+
+- Updated Italian translation (Daniele Medri)
+- Fixed double entry in property bar's font family combobox
+- Don't allow zero width or height when drawing pixbufs
+- Fixed various memory leaks
+- New configure option to disable update-mime-database and update-desktop-database
+- New merge backend for evolution data server (Austin Henry)
+- New minimal merge backend for VCards using evolution data server API (Austin Henry)
+- New templates and fixes
+
+
+* gLabels 2.1.1 (unstable) release.  Release date 2005-06-21.
+
+- Added document merge tutorial to help documentation
+- Replaced deprecated widgets (now requires Gnome 2.10 and GTK+ 2.6)
+- Replaced libbonoboui with GtkUIManager (now requires Gnome 2.10 and GTK+ 2.6)
+- Updated Russian translation (Vitaly Lipatov)
+- Updated Spanish translation (Sergio Rivadero)
+- Updated Czech translation (David Makovský and Zbynek Mrkvick)
+- Updated Italian translation (Daniele Medri)
+- Added documentation for libglabels
+- Minor bug fixes and cleanup
+- New templates
+
+
+* gLabels 2.1.0 (unstable) release.  Release date 2005-01-22.
+
+- Added ability to select color from merge source (Frederic Ruaudel)
+- See 2.0.2
+
+
+* gLabels 2.0.2 release.  Release date 2005-01-22.
+
+- Desktop file reconciled with desktop-entry-spec
+- New cleaned-up icon
+- Added option to glabels-batch to allow selection of first label.
+- Added options to glabels-batch to allow selection of merge source and crop marks.
+  (JosÃ© Dapena Paz)
+- Updated french translation (Florent Morel)
+- Fixed translation problem with object editor labels
+- Minor bug fixes and cleanup
+- New templates
+
+* gLabels 2.0.1 release.  Release date 2004-08-15.
+
+- Fixed crash when reading some labels created with 1.93.x.
+- Updated japanese translations (Takeshi AIHANA)
+- Fixed crash from improperly freeing translation strings.
+
+
+* gLabels 2.0.0 release.  Release date 2004-08-09.
+
+- Fixed crash when encountering old template files
+- Align grid to label center for DVD/CD and round labels
+- Don't touch compression of original file
+- 64-bit fixes
+- Added man page
+- Fixed missing outline problem experienced with some printers
+- Added separate horizontal and vertical waste properties for rectangular templates
+- Added option to auto-shrink text during document merge
+- Fixed memory leaks
+- Added format attibute to barcode objects, to allow correct layout of merged labels
+- Fixed mime type registration for GNOME 2.6
+

@@ -1,0 +1,66 @@
+Source: glabels
+Section: gnome
+Priority: optional
+Maintainer: Jakob Haufe <sur5r@debian.org>
+Build-Depends: autoconf-archive,
+               debhelper-compat (= 13),
+               intltool,
+               gtk-doc-tools,
+               yelp-tools,
+               libglib2.0-dev,
+               libgtk-3-dev,
+               libxml2-dev,
+               librsvg2-dev,
+               libcairo2-dev,
+               libpango1.0-dev,
+               libebook1.2-dev,
+               barcode,
+               libqrencode-dev,
+               libiec16022-dev
+Standards-Version: 4.6.1
+Rules-Requires-Root: no
+Homepage: http://glabels.org/
+Vcs-Git: https://salsa.debian.org/debian/glabels.git
+Vcs-Browser: https://salsa.debian.org/debian/glabels
+
+Package: glabels
+Architecture: any
+Depends: glabels-data (= ${source:Version}),
+         ${shlibs:Depends},
+         ${misc:Depends}
+Recommends: evince | atril
+Suggests: evolution-data-server
+Provides: libglabels5
+Description: label, business card and media cover creation program for GNOME
+ gLabels is a lightweight program for creating labels, barcodes, business
+ cards and media covers for the GNOME desktop environment. It is designed to
+ work with various laser/ink-jet peel-off label and business card sheets that
+ you'll find at most office supply stores.
+ .
+ gLabels also supports mail merge from sources such as CSV files, vCards and
+ Evolution data servers.
+
+Package: glabels-data
+Architecture: all
+Depends: gnome-desktop3-data, ${misc:Depends}
+Description: data files for gLabels
+ gLabels is a lightweight program for creating labels, barcodes, business
+ cards and media covers for the GNOME desktop environment.
+ .
+ This package contains gLabel's default set of label, business card and media
+ cover templates.
+
+Package: glabels-dev
+Section: devel
+Architecture: any
+Depends: glabels (= ${binary:Version}),
+         glabels-data (= ${source:Version}),
+         libglib2.0-dev,
+         libxml2-dev,
+         ${misc:Depends}
+Description: development documentation and library files for gLabels
+ gLabels is a lightweight program for creating labels, barcodes, business
+ cards and media covers for the GNOME desktop environment.
+ .
+ This package provides the development environment for libglabels,
+ which is meant to facilitate 3rd party use of glabels templates.

@@ -1,0 +1,13 @@
+/debian/.debhelper/
+/debian/files
+/debian/*.debhelper.log
+/debian/*.substvars
+/debian/*debhelper*
+/*.deb
+/*.dsc
+/*.changes
+/*.buildinfo
+/*.tar.*
+/.pc/
+/build/
+/obj-*/

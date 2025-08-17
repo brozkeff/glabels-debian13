@@ -1,0 +1,6 @@
+0002-manpage.patch
+0003-Ignore-license.page.patch
+gnome-common-cleanup
+add-missing-prototype
+gcc10_build_fix.patch
+gcc14_fix

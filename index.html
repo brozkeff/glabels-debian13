@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>brozkeff glabels custom APT repo</title>
+</head>
+<body>
+  <h1>APT repository: glabels custom build</h1>
+  <p>This GitHub Pages site hosts an APT repository with custom-patched <code>glabels</code>.</p>
+
+  <h2>How to use</h2>
+  <pre>
+curl -fsSL https://brozkeff.github.io/glabels-debian13/KEY.gpg \
+  | sudo tee /usr/share/keyrings/brozkeff-glabels.gpg >/dev/null
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/brozkeff-glabels.gpg] \
+https://brozkeff.github.io/glabels-debian13/ ./" \
+| sudo tee /etc/apt/sources.list.d/brozkeff-glabels.list >/dev/null
+
+sudo apt update
+sudo apt install glabels
+  </pre>
+
+  <h2>Contents</h2>
+  <ul>
+    <li><a href="Packages">Packages</a></li>
+    <li><a href="Packages.gz">Packages.gz</a></li>
+    <li><a href="Release">Release</a></li>
+    <li><a href="InRelease">InRelease</a></li>
+    <li><a href="pool/">pool/</a></li>
+  </ul>
+</body>
+</html>

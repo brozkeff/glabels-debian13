@@ -1,0 +1,92 @@
+Package: glabels-data
+Architecture: all
+Version: 3.4.1-5.1+brozkeff11
+Priority: optional
+Section: gnome
+Source: glabels
+Maintainer: Jakob Haufe <sur5r@debian.org>
+Installed-Size: 7127
+Depends: gnome-desktop3-data, dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/g/glabels/glabels-data_3.4.1-5.1+brozkeff11_all.deb
+Size: 2906544
+MD5sum: da21a22cd1facc87d3065c361662cb53
+SHA1: 43f07e3e268621bab9ff8ca8173cbf596549d025
+SHA256: 67be7912f270488fa33e35b9d9d6cac37b8eea79a23a92ae336eb04882989f84
+SHA512: 96f64e1ebf36dc9d3295d22b8c6bd0c57cac630696b505658ecf0c4da4fcce1a608a9a67b8dd04c011dc0e60774d22cb6dec3e974f99f97e30083b732bc199c2
+Homepage: http://glabels.org/
+Description: data files for gLabels
+ gLabels is a lightweight program for creating labels, barcodes, business
+ cards and media covers for the GNOME desktop environment.
+ .
+ This package contains gLabel's default set of label, business card and media
+ cover templates.
+
+Package: glabels-dbgsym
+Architecture: amd64
+Version: 3.4.1-5.1+brozkeff11
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: glabels
+Maintainer: Jakob Haufe <sur5r@debian.org>
+Installed-Size: 1364
+Depends: glabels (= 3.4.1-5.1+brozkeff11)
+Filename: pool/main/g/glabels/glabels-dbgsym_3.4.1-5.1+brozkeff11_amd64.deb
+Size: 948840
+MD5sum: b57b72fa5ca74f72a4f8bc2c03e74ae5
+SHA1: ecdc35ba3a2b3b73f9d7cfbfc7c3aa32cbd3b21a
+SHA256: 076d95a528a5cc7282f1bbb78a1dd46f0e4fbd14bd0c818e7af4bb677bdabaca
+SHA512: 66fe57428f499b2dcfbc9d1794c1ea25404548ab4a901371761944f033b988ef847ddea4adb8205bd7db544bb2903d3bba6e7b34592fa4524525046cbc7310a7
+Description: debug symbols for glabels
+Build-Ids: 133b4e55c70b20e23c6c59e6cf49a9db1b8fd1cc 18b71a0e3292406747e92c7e7500527c91635cd4 5878180a7e145c590a77ec10b224497aeeffbbbe 6d0736eb815090fcde3ec5632ef7e786f94cee25
+
+Package: glabels-dev
+Architecture: amd64
+Version: 3.4.1-5.1+brozkeff11
+Priority: optional
+Section: devel
+Source: glabels
+Maintainer: Jakob Haufe <sur5r@debian.org>
+Installed-Size: 932
+Depends: glabels (= 3.4.1-5.1+brozkeff11), glabels-data (= 3.4.1-5.1+brozkeff11), libglib2.0-dev, libxml2-dev
+Filename: pool/main/g/glabels/glabels-dev_3.4.1-5.1+brozkeff11_amd64.deb
+Size: 240692
+MD5sum: a09ea955c71360b23e8579c82ea76afe
+SHA1: 03bba71b2ad8d477c2ecbc465fa64794ac0d9fa2
+SHA256: 5f8d16e67febd23c82ff207e8698b972d273bf49d2cc4041d9027f53e644eff3
+SHA512: a9356dfb66bfef0cdd8468d299668c1d1cb1a042b9d7cfc8fe2264ed0bb5d6ae64664fceb61ca81d377c2b0cb0956a2a44485f127733661b9b31296d3cde6468
+Homepage: http://glabels.org/
+Description: development documentation and library files for gLabels
+ gLabels is a lightweight program for creating labels, barcodes, business
+ cards and media covers for the GNOME desktop environment.
+ .
+ This package provides the development environment for libglabels,
+ which is meant to facilitate 3rd party use of glabels templates.
+
+Package: glabels
+Architecture: amd64
+Version: 3.4.1-5.1+brozkeff11
+Priority: optional
+Section: gnome
+Maintainer: Jakob Haufe <sur5r@debian.org>
+Installed-Size: 1303
+Provides: libglabels5
+Depends: glabels-data (= 3.4.1-5.1+brozkeff11), barcode (>= 0.99), libc6 (>= 2.38), libcairo2 (>= 1.2.4), libebook-1.2-21t64 (>= 3.17), libebook-contacts-1.2-4t64 (>= 3.16.2), libedataserver-1.2-27t64 (>= 3.17), libgdk-pixbuf-2.0-0 (>= 2.22.0), libglib2.0-0t64 (>= 2.80.0), libgtk-3-0t64 (>= 3.0.0), libiec16022-1 (>= 0.2.4), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.14.0), libqrencode4 (>= 3.2.0), librsvg2-2 (>= 2.14.4), libxml2 (>= 2.7.4)
+Recommends: evince | atril
+Suggests: evolution-data-server
+Filename: pool/main/g/glabels/glabels_3.4.1-5.1+brozkeff11_amd64.deb
+Size: 445228
+MD5sum: e05eb8abab297ee4e700fe6401965691
+SHA1: 904ca5f6ee39d3b9a15987c864ec2ec4cec358c9
+SHA256: 1040710a629723af5070cfa85d2bd55143f134648f98e5355b6f748cefabb333
+SHA512: a4b2cf604ff71d3ae20474a99b844a0a120030624582a945c473e19b419f283a2cf21623fa2f948229a55077b67d521ddcb18de4a9190ecaa46167cf57bb61b4
+Homepage: http://glabels.org/
+Description: label, business card and media cover creation program for GNOME
+ gLabels is a lightweight program for creating labels, barcodes, business
+ cards and media covers for the GNOME desktop environment. It is designed to
+ work with various laser/ink-jet peel-off label and business card sheets that
+ you'll find at most office supply stores.
+ .
+ gLabels also supports mail merge from sources such as CSV files, vCards and
+ Evolution data servers.
+
